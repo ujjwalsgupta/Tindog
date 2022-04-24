@@ -1,0 +1,305 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS (Bootstrap CSS link must go above our CSS link)-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <!-- CSS Stylesheet -->
+  <link rel="stylesheet" href="css/styles.css">
+  <!-- Favicon -->
+  <link rel="icon" href="images/tinderlogo.png">
+
+  <title>Tindog</title>
+</head>
+
+<body>
+
+
+  <!-- TITLE -->
+  <section id="title">
+    <div class="container-fluid">
+
+
+      <!-- Nav bar -->
+      <!-- Part 1 = Navbar consisting of navbar-brand (logo/company name) & Toggler Button -->
+      <nav class="navbar navbar-expand-sm navbar-dark">
+        <!-- navbar-expand{-sm|-md|-lg|-xl|-xxl} = Expands the components of navbar for responsive collapsing horizontally or without this class, the components would be vertically stacked. -->
+        <!-- navbar-light = Components of navbar (black) -->
+        <!-- bg-warning = bg color of navbar (yellow) -->
+        <!-- Search 'Buttons' on Bootstrap Documentation to know more about different colours for navbar-->
+
+
+        <a class="navbar-brand" href="#">tindog</a>
+        <!-- navbar-brand = This class is used to display the logo/company name. -->
+
+
+        <!--Toggler Button -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+
+        <!-- Div containing all the unordered lists + Containing Toggler Collapsible lists/components -->
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <!-- id="navbarSupportedContent -> Is a target-id so that the toggler button will know which Div to collapse -->
+
+
+          <!--Unordered lists-->
+          <ul class="navbar-nav ms-auto mb-2 mb-sm-0">
+            <!-- me-auto = 'm' means margin,
+                                   'e' (end) for classes that set margin-right or padding-right in LTR, margin-left or padding-left in RTL
+                                   'b' for classes that set margin-bottom or padding-bottom
+                                   'auto' for classes that set the margin to auto. Means, it's going to fill as much space (margin) that possibly it can insert between left & right components of navbar.-->
+
+            <!-- A hoverable link to Navigate anywhere.-->
+            <li class="nav-item">
+              <a class="nav-link" href="#footer">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#pricing">Pricing</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#cta">Download</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+
+      <!-- Title -->
+      <div class="row">
+        <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
+          <h1>Meet new and interesting dogs nearby.</h1>
+          <button type="button" class="btn btn-dark btn-lg download-button"><i class="fa-brands fa-apple"></i> Download</button>
+          <button type="button" class="btn btn-outline-light btn-lg download-button"><i class="fa-brands fa-google-play"></i> Download</button>
+        </div>
+        <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
+          <img class="iphone6-img" src="images/iphone6.png" alt="iphone-mockup">
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+
+  <!-- FEATURES -->
+
+  <section id="features">
+    <div class="container-fluid features-container">
+
+      <div class="row">
+        <div class="features-box1 col-xxl-4 col-xl-4 col-lg-4 col-md-4 col-sm-6 col-12">
+          <i class="fa-solid fa-circle-check fa-4x features-icons"></i>
+          <h3 class="features-heading">Easy to use.</h3>
+          <p class="features-paragraph">So easy to use, even your dog could do it.</p>
+        </div>
+        <div class="features-box2 col-xxl-4 col-xl-4 col-lg-4 col-md-4 col-sm-6 col-12">
+          <i class="fa-solid fa-bullseye fa-4x features-icons"></i>
+          <h3 class="features-heading">Elite Clientele</h3>
+          <p class="features-paragraph">We have all the dogs, the greatest dogs.</p>
+        </div>
+        <div class="features-box3 col-xxl-4 col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12">
+          <i class="fa-solid fa-heart fa-4x features-icons"></i>
+          <h3 class="features-heading">Guaranteed to work.</h3>
+          <p class="features-paragraph2">Find the love of your dog's life or your money back.</p>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+
+  <!-- TESTIMONIALS -->
+
+  <section id="testimonials">
+    <div class="testimonials-container">
+
+      <div id="CarouselExample" class="carousel slide" data-bs-ride="carousel" data-bs-keyboard="true" data-bs-interval="5000">
+        <!-- 1. id="CarouselExample" is the targeting id for the buttons to function.-->
+        <!-- 2. class="carousel slide" here, class="carousel" ensures that we are going to make a carousel & class="slide" makes sure to slide the carousel from left to right.-->
+        <!-- 3. data-bs-ride. If set to 'false' then the slide won't change after the time interval. It will only play if we tell it to. Either by keyboard controls or carousel buttons after doing it once it autoplays.-->
+        <!--   If set to 'carousel' then the slides will change as per time interval & will also work with keyboard & button controls.-->
+        <!-- 4. data-bs-keyboard. If set to 'true' then the carousel will follow buttom commands with keyboard actions.-->
+
+        <div class="carousel-inner">
+          <!-- class="carousel-inner" contains the contents of carousel items i.e., the slides which will be changed. Here, it contains 3 divs (slides)-->
+
+          <div class="carousel-item active">
+            <h2 class="testimonials-heading">I no longer have to sniff other dogs for love. I've found the hottest Corgi on TinDog. Woof.</h2>
+            <img class="dog-image" src="images/dog-img.jpg" alt="dog-profile">
+            <em class="dog-name">Pebbles, New York</em>
+          </div>
+          <!-- class="carousel-item active". Here, class="carousel-item" has the content for the 1st slide.
+             class="active" this class is responsible for the changing slides of the carousel. And one of our class should be marked as an active class.-->
+
+          <div class="carousel-item">
+            <h2 class="testimonials-heading">My dog used to be so lonely, but with TinDog's help, they've found the love of their life. I think.</h2>
+            <img class="lady-image" src="images/lady-img.jpg" alt="lady-profile">
+            <em class="lady-name">Beverly, Illinois</em>
+          </div>
+
+          <!-- The above img tag contains the Content inside the carousel slides. There can be any content here, it can be a Heading (h1, h2,..), Paragraph etc.-->
+
+          <!-- <div class="carousel-item" style="background-color: green">
+            <img src="..." class="d-block w-100" alt="...">
+          </div>
+        </div> -->
+
+          <!-- BUTTONS -->
+          <!--Previous Button-->
+          <button class="carousel-control-prev" type="button" data-bs-target="#CarouselExample" data-bs-slide="prev">
+            <!-- class="carousel-control-prev" is the left button of the carousel which after clicking takes us to the previous slide. -->
+            <!-- data-bs-target: Is a href which is targeting the carousel id & is responsible for changing of slides when a button is pressed.
+                                     & needs to be of the same name as of the id of carousel (line 1) -->
+            <!-- type="button" is applied to change the role of our button tag to a button to our carousel. -->
+            <!-- data-bs-slide="prev" attribute is responsible for which direction our carousel slide.
+                        Here, it is "previous" which means our carousel will slide backwards & vice versa. -->
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <!-- Span tag is used for button icon. class="carousel-control-prev-icon" is the class from which the arrow button icon is made. -->
+            <!-- aria-hidden="true". This attribute is responsible for making the website more accessible & friendly to people with disabilities.
+         This means when a visually impared person comes to our website, they usually have something called as screen reader
+         which goes through website & reads what's written over there what we can see.
+         So, here we don't want the screen reader to read out 'left button', 'right button' or forward or previous button.
+         So, aria-hidden="true" makes the screen reader to the screen to skip over this span button so that visually impared person doesn't have to listen to all the buttons.-->
+            <span class="visually-hidden">Previous</span>
+          </button>
+
+
+          <!--Next Button-->
+          <button class="carousel-control-next" type="button" data-bs-target="#CarouselExample" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+
+      </div>
+  </section>
+
+
+  <!-- Press -->
+
+  <section id="press">
+    <div class="container-fluid press-container">
+
+      <img class="testimonials-logo" src="images/techcrunch.png" alt="tc-logo"> <!-- Alt + drag to write same code in multiple lines -->
+      <img class="testimonials-logo" src="images/tnw.png" alt="tnw-logo">
+      <img class="testimonials-logo" src="images/bizinsider.png" alt="biz-insider-logo">
+      <img class="testimonials-logo" src="images/mashable.png" alt="mashable-logo">
+    </div>
+  </section>
+
+
+  <!-- Pricing -->
+
+  <section id="pricing">
+    <!-- <div class="container-fluid"> -->
+
+      <h2 class="pricing-heading">A Plan for Every Dog's Needs</h2>
+      <p class="pricing-paragraph">Simple and affordable price plans for you and your dog.</p>
+
+      <div class="row">
+        <div class="pricings-column col-xxl-4 col-xl-4 col-lg-4 col-md-4 col-sm-6 col-12">
+          <!-- card-deck class wraps all the classes named "card" inside it as a deck of cards.-->
+          <div class="card">
+            <!-- Whenever, "card" class is used, it is used for making card for our website. -->
+            <div class="card-header">
+              <h3 class="breed-names">Chihuahua</h3>
+            </div>
+            <div class="card-body">
+              <h2 class="pricing-plans">Free</h2>
+              <p class="pricings-info">5 Matches Per Day</p>
+              <p class="pricings-info">10 Messages Per Day</p>
+              <p class="pricings-info">Unlimited App Usage</p>
+              <button type="button" class="pricings-button btn btn-outline-dark col-12">Sign up for free</button>
+              <!-- Adding col-12 class for full sized block button -->
+            </div>
+          </div>
+        </div>
+
+        <div class="pricings-column col-xxl-4 col-xl-4 col-lg-4 col-md-4 col-sm-6 col-12">
+          <div class="card">
+            <!-- Whenever, "card" class is used, it is used for making card for our website. -->
+            <div class="card-header">
+              <h3 class="breed-names">Labrador</h3>
+            </div>
+            <div class="card-body">
+              <h2 class="pricing-plans">$49 / mo</h2>
+              <p class="pricings-paragraph">Unlimited Matches</p>
+              <p class="pricings-paragraph">Unlimited Messages</p>
+              <p class="pricings-paragraph">Unlimited App Usage</p>
+              <button type="button" class="pricings-button btn btn-dark col-12">Get Started</button>
+              <!-- Adding col-12 class for full sized block button -->
+            </div>
+          </div>
+        </div>
+
+        <div class="pricings-column col-xxl-4 col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12">
+          <div class="card">
+            <!-- Whenever, "card" class is used, it is used for making card for our website. -->
+            <div class="card-header">
+              <h3 class="breed-names">Mastiff</h3>
+            </div>
+            <div class="card-body">
+              <h2 class="pricing-plans">$99 / mo</h2>
+              <p class="pricings-paragraph">Pirority Listing</p>
+              <p class="pricings-paragraph">Unlimited Matches</p>
+              <p class="pricings-paragraph">Unlimited Messages</p>
+              <p class="pricings-paragraph">Unlimited App Usage</p>
+              <button type="button" class="pricings-button btn btn-dark col-12">Get Started</button>
+              <!-- Adding col-12 class for full sized block button -->
+            </div>
+          </div>
+        </div>
+      </div>
+    <!-- </div> -->
+  </section>
+
+
+  <!-- Call to Action -->
+
+  <section id="cta"> <!--Call to Action-->
+
+    <h3 class="cta-heading">Find the True Love of Your Dog's Life Today.</h3>
+    <button type="button" class="btn btn-dark btn-lg download-button"><i class="fa-brands fa-apple"></i> Download</button>
+    <button type="button" class="btn btn-light btn-lg download-button"><i class="fa-brands fa-google-play"></i> Download</button>
+
+  </section>
+
+
+  <!-- Footer -->
+
+  <footer id="footer">
+    <a href="https://www.linkedin.com/in/ujjwalsgupta/"><i class="footer-icons fa-brands fa-linkedin-in"></i></a>
+    <a href="https://www.instagram.com/ujjwalsgupta/"><i class="footer-icons fa-brands fa-instagram"></i></a>
+    <a href="https://twitter.com/ujjwalsgupta"><i class="footer-icons fa-brands fa-twitter"></i></a>
+    <a href="mailto:guptaxujjwal@gmail.com"><i class="footer-icons fa-solid fa-envelope"></i></a>
+    <p class="footer-paragraph">© Copyright 2022 TinDog<br>Made with <i class="heart-icon fa-solid fa-heart"></i> by Ujjwal Gupta</p>
+  </footer>
+
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+    rel="stylesheet">
+
+  <!-- Font Awesome CDN -->
+  <script src="https://kit.fontawesome.com/ab7a0eda6f.js" crossorigin="anonymous"></script>
+
+  <!-- Optional JavaScript; choose one of the two! -->
+
+  <!-- Option 1: Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+  <!-- Option 2: Separate Popper and Bootstrap JS -->
+  <!--
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+  -->
+</body>
+
+</html>

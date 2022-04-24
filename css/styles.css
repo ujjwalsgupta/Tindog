@@ -1,0 +1,433 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 3.5rem;       /*Font size increased from 3 rem to 3.5 rem because it was competing with our navbar-brand*/
+                           /* Visual Heirarchy is an important concept in web design */
+  font-weight: 900;
+  line-height: 1.5;
+}
+
+/* TITLE SECTION */
+
+#title {
+  background-color: #ff4c68;
+  color: #fff;
+}
+
+.navbar {
+  padding-bottom: 4.5rem;
+}
+
+.navbar-brand {
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 2.5rem;
+  font-weight: 500;
+}
+
+.nav-item {
+  padding: 0 18px 0 18px;
+}
+
+.nav-link {
+  font-size: 1.2rem;
+  font-weight: 300;
+}
+
+.container-fluid {
+  padding: 3% 15% 8.5%;
+}
+
+.download-button {
+  margin: 5% 3% 5% 0%;
+}
+
+.iphone6-img {
+  width: 20%;
+  transform: rotate(25deg);
+  margin-left: 5rem;
+  position: absolute;
+}
+
+/* FEATURES SECTION */
+
+.features-container {
+  padding: 10% 15%;
+  background-color: #fff;
+  position: relative;
+  z-index: 1;
+}
+
+.features-box1, .features-box2, .features-box3 {
+  text-align: center;
+}
+
+.features-icons {
+  color: #ef8172;
+  margin-bottom: 1rem;
+}
+
+.features-icons:hover {
+  color: #ff4c68;
+}
+
+.features-heading {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+.features-paragraph, .features-paragraph2 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  color: #8f8f8f;
+  padding: 0 12%;
+}
+
+/* TESTIMONIALS SECTION */
+
+#testimonials {
+  background-color: #ef8172;
+  text-align: center;
+  padding-top: 3%;
+}
+
+.carousel-item {
+  padding: 3% 15% 6%;
+}
+
+.testimonials-heading {
+  font-family: 'Montserrat' , sans-serif;
+  font-weight: 700;
+  color: #fff;
+  font-size: 3rem;
+  line-height: 1.5;
+  margin-bottom: 30px;
+}
+
+.dog-image {
+  border-radius: 100%;        /*To make any image circular, use 'border-radius' property.*/
+  width: 10%;
+  margin: 0 20px 0;
+}
+
+.dog-name {
+  color: #fff;
+}
+
+.lady-image {
+  border-radius: 100%;
+  width: 10%;
+  margin: 0 20px 0;
+}
+
+.lady-name {
+  color: #fff;
+}
+
+/* PRESS SECTION */
+
+#press {
+  background-color: #ef8172;
+  text-align: center;
+}
+
+.press-container {
+  padding: 3% 15% 6%;
+}
+
+.testimonials-logo {
+  width: 20%;
+  margin: 20px;
+}
+
+/* PRICING SECTION */
+
+#pricing {
+  text-align: center;
+  padding: 6% 10% 6%;
+}
+
+.pricing-heading {
+  font-family: 'Montserrat' , sans-serif;
+  font-weight: 700;
+  color: #000;
+  font-size: 3rem;
+  line-height: 1.5;
+}
+
+.pricing-paragraph {
+  margin-bottom: 3rem;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  color: #8f8f8f;
+  font-size: 1.1rem;
+}
+
+.pricings-column {
+  padding: 2% 2%;
+}
+
+.breed-names {
+  font-family: 'Montserrat' , sans-serif;
+  font-weight: 700;
+  color: #000;
+  font-size: 1.5rem;
+}
+
+.pricing-plans {
+  font-family: 'Montserrat' , sans-serif;
+  font-weight: 700;
+  color: #000;
+  font-size: 2rem;
+  margin-bottom: 1.2rem;
+}
+
+.pricings-info {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  color: #8f8f8f;
+}
+
+.pricings-button {
+  margin-top: 0.4rem;
+}
+
+/* CTA 'CALL TO ACTION' ACTION */
+
+#cta {
+  background-color: #ff4c68;
+  text-align: center;
+  padding: 8% 19% 4%;
+}
+
+.cta-heading {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  color: #fff;
+  font-size: 3.2rem;
+  line-height: 1.5;
+}
+
+/* FOOTER SECTION */
+
+#footer {
+  background-color: #fff;
+  text-align: center;
+  padding: 5% 15% 3%;
+}
+
+.footer-icons {
+  margin: 7px 7px 15px;
+  color: #000;
+}
+
+.footer-icons:hover {
+  color: #8f8f8f;
+}
+
+.heart-icon {
+  color: #ef8172;
+}
+
+.heart-icon:hover {
+  color: #ff4c68;
+}
+
+.footer-paragraph {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  color: #8f8f8f;
+  line-height: 2;
+}
+
+@media (max-width: 768px) {
+
+  .iphone6-img {
+    position: static;
+    transform: rotate(0deg);
+    width: 50%;
+    margin-left: 0;
+    margin-top: 2rem;
+  }
+
+  .nav-item {
+    padding: 0 5px;
+  }
+
+  #title {
+    text-align: center;
+  }
+
+  .features-paragraph {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    color: #8f8f8f;
+    padding: 0 1%;
+  }
+
+  .features-paragraph2 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    color: #8f8f8f;
+    padding: 0 20%;
+  }
+
+  .navbar {
+    padding-bottom: 3rem;
+  }
+
+  .features-box1{
+    margin-bottom: 2rem;
+  }
+
+  .testimonials-heading {
+    font-family: 'Montserrat' , sans-serif;
+    font-weight: 600;
+    color: #fff;
+    font-size: 2.1rem;
+    line-height: 1.5;
+    margin-bottom: 30px;
+  }
+
+  .testimonials-logo {
+    width: 25%;
+    margin: 20px;
+  }
+
+  .cta-heading {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    color: #fff;
+    font-size: 2rem;
+    line-height: 1.5;
+  }
+
+  .pricing-heading {
+    font-family: 'Montserrat' , sans-serif;
+    font-weight: 700;
+    color: #000;
+    font-size: 2.5rem;
+    line-height: 1.5;
+  }
+}
+
+@media (max-width: 576px) {
+  h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.5rem;       /*Font size increased from 3 rem to 3.5 rem because it was competing with our navbar-brand*/
+                             /* Visual Heirarchy is an important concept in web design */
+    font-weight: 700;
+    line-height: 1.5;
+  }
+
+  .navbar-brand {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 2rem;
+    font-weight: 500;
+  }
+
+  .features-paragraph {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    color: #8f8f8f;
+    padding: 0 15%;
+  }
+
+  .features-paragraph2 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    color: #8f8f8f;
+    padding: 0 15%;
+  }
+
+  .features-box1, .features-box2 ,.features-box3{
+    margin-bottom: 2rem;
+  }
+
+  .testimonials-heading {
+    font-family: 'Montserrat' , sans-serif;
+    font-weight: 600;
+    color: #fff;
+    font-size: 1.9rem;
+    line-height: 2;
+    margin-bottom: 40px;
+  }
+
+  .dog-image {
+    border-radius: 100%;        /*To make any image circular, use 'border-radius' property.*/
+    width: 15%;
+    margin: 0 20px 0;
+  }
+
+  .dog-name {
+    color: #fff;
+  }
+
+  .lady-image {
+    border-radius: 100%;
+    width: 15%;
+    margin: 0 20px 0;
+  }
+
+  .lady-name {
+    color: #fff;
+  }
+
+  .testimonials-logo {
+    width: 35%;
+    margin: 20px;
+  }
+
+  #testimonials {
+    background-color: #ef8172;
+    text-align: center;
+    padding-top: 10%;
+  }
+
+  .press-container {
+    padding: 6% 15% 12%;
+  }
+
+  #pricing {
+    text-align: center;
+    padding: 12% 10% 12%;
+  }
+
+  .pricing-heading {
+    font-family: 'Montserrat' , sans-serif;
+    font-weight: 700;
+    color: #000;
+    font-size: 2.5rem;
+    line-height: 1.4;
+    margin-bottom: 1.2rem;
+  }
+
+  #cta {
+    background-color: #ff4c68;
+    text-align: center;
+    padding: 12% 17% 6%;
+  }
+
+  .cta-heading {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    color: #fff;
+    font-size: 2rem;
+    line-height: 1.5;
+    margin-bottom: 1.5rem;
+  }
+
+  #footer {
+    background-color: #fff;
+    text-align: center;
+    padding: 12% 15% 3%;
+  }
+
+  .nav-link {
+    text-align:
+    
+  }
+}
